@@ -3,3 +3,4 @@
 .log/*
 .vagrant/*
 log/*
+/talos/secrets.yaml
