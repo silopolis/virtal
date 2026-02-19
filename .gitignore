@@ -1,0 +1,5 @@
+.env
+*.iso
+.log/*
+.vagrant/*
+log/*
