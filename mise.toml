@@ -1,0 +1,18 @@
+[settings]
+env_shell_expand = true
+
+[tools]
+talosctl = "1.12.4"
+kubectl = "1.35.0"
+k9s = "latest"
+yq = "latest"
+
+[env]
+PROJECT_NAME = "{{ config_root | basename }}"
+PROJECT_ROOT = "{{config_root}}"
+TALOS_CLUSTER_NAME = "{{ get_env(name='CLUSTER_NAME', default=env.PROJECT_NAME) }}"
+TALOS_CONTEXT = "{{ get_env(name='TALOS_CONTEXT', default=env.TALOS_CLUSTER_NAME) }}"
+TALOSHOME = "{{ env.PROJECT_ROOT}}/talos"
+TALOSCONFIG = "{{ env.TALOSHOME}}/talosconfig"
+TALOS_STATE_DIR = "{{ env.TALOSHOME}}/clusters"
+KUBECONFIG = "{{ env.PROJECT_ROOT}}/kube/config"
