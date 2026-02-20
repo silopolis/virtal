@@ -16,3 +16,6 @@ TALOSHOME = "{{ env.PROJECT_ROOT}}/talos"
 TALOSCONFIG = "{{ env.TALOSHOME}}/talosconfig"
 TALOS_STATE_DIR = "{{ env.TALOSHOME}}/clusters"
 KUBECONFIG = "{{ env.PROJECT_ROOT}}/kube/config"
+VAGRANT_CWD = "{{ config_root }}"
+VAGRANT_DEFAULT_PROVIDER = "libvirt"
+VAGRANT_NO_PARALLEL = false
