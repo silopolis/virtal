@@ -14,8 +14,10 @@ Vagrant.configure('2') do |config|
       log_cp01 = File.expand_path('.log/cp01.log', __dir__)
       domain.serial type: 'file', source: { path: log_cp01 }
       # domain.serial type: 'file', source: { path: File.expand_path('.log/cp01.log') }
-      domain.storage :file, size: '4G', type: 'raw'
+
+      domain.storage :file, size: '8G', type: 'raw'
       domain.storage :file, device: :cdrom, path: ISO_PATH
+
       domain.boot 'hd'
       domain.boot 'cdrom'
     end
@@ -28,8 +30,10 @@ Vagrant.configure('2') do |config|
       log_cp02 = File.expand_path('.log/cp02.log', __dir__)
       domain.serial type: 'file', source: { path: log_cp02 }
       # domain.serial type: 'file', source: { path: File.expand_path('.log/cp02.log') }
-      domain.storage :file, size: '4G', type: 'raw'
+
+      domain.storage :file, size: '8G', type: 'raw'
       domain.storage :file, device: :cdrom, path: ISO_PATH
+
       domain.boot 'hd'
       domain.boot 'cdrom'
     end
@@ -42,8 +46,10 @@ Vagrant.configure('2') do |config|
       log_cp03 = File.expand_path('.log/cp03.log', __dir__)
       domain.serial type: 'file', source: { path: log_cp03 }
       # domain.serial type: 'file', source: { path: File.expand_path('.log/cp03.log') }
-      domain.storage :file, size: '4G', type: 'raw'
+
+      domain.storage :file, size: '8G', type: 'raw'
       domain.storage :file, device: :cdrom, path: ISO_PATH
+
       domain.boot 'hd'
       domain.boot 'cdrom'
     end
@@ -56,8 +62,10 @@ Vagrant.configure('2') do |config|
       log_wk01 = File.expand_path('.log/wk01.log', __dir__)
       domain.serial type: 'file', source: { path: log_wk01 }
       # domain.serial type: 'file', source: { path: File.expand_path('.log/wk01.log') }
-      domain.storage :file, size: '4G', type: 'raw'
+
+      domain.storage :file, size: '8G', type: 'raw'
       domain.storage :file, device: :cdrom, path: ISO_PATH
+
       domain.boot 'hd'
       domain.boot 'cdrom'
     end
