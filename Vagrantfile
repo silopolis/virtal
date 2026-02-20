@@ -4,7 +4,7 @@
 vagrant_dir  = File.dirname(__FILE__)
 LOG_DIR      = 'log'
 project_root = File.expand_path(vagrant_dir)
-talos_iso    = ENV.fetch('TALOS_ISO', 'talos-metal-amd64-1.12.4.iso')
+talos_iso    = ENV.fetch('TALOS_ISO', 'metal-amd64.iso')
 ISO_PATH     = File.expand_path(File.join(project_root, talos_iso))
 
 # Make sure log directory exists on host.
