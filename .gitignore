@@ -3,4 +3,14 @@
 .log/*
 .vagrant/*
 log/*
-/talos/secrets.yaml
+
+# Never commit Talos and K8s client configs as the hold connection secrets
+kube/config
+kubeconfig
+talos/config
+talosconfig
+
+# Never commit Talos cluster config files as they hold highly sensitive secrets
+secrets.yaml
+talos/controlplane.yaml
+talos/worker.yaml
